@@ -52,11 +52,7 @@ function AddUser() {
       <Input id="examplecontact" name="contact" placeholder="contact"   onChange={(e)=> onvaluechange(e)}  type="text"/>
     </FormGroup>
     {' '}
-    {/* <FormGroup>
-    <Label for="exampleText" hidden>Address </Label>
-    <Input id="exampleText" name="Address" type="textarea"  onChange={(e)=> onvaluechange(e)}  placeholder="Enter your Address...."/>
-  </FormGroup>
-   */}
+
     <Button onClick={()=>adduserdetail()}>Submit</Button>
   </Form>
 </div>
