@@ -15,9 +15,9 @@ function Footer() {
     </div>
     <div className="footer-left text-center">
         <p className="footer-links">
-           DEVELOPED BY JANGIDPOOJA 
+           DEVELOPED BY JANGIDPOOJA &copy;{new Date().getFullYear()}
         </p>
-        <p>Company Name &copy; 2022</p>
+        {/* <p>Company Name &copy; 2022</p> */}
     </div>
 
 </footer>

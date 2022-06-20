@@ -26,7 +26,7 @@ function AddUser() {
          naviagte("/")
   }
   return <div>
-  <div className="container mt-5">
+  <div className="container mt-5 main-add">
     <Form inline className="form1">
     <FormGroup>
       <Label for="exampleUsername"  ><h2>ADD USER</h2></Label>
@@ -53,8 +53,11 @@ function AddUser() {
     </FormGroup>
     {' '}
 
-    <Button onClick={()=>adduserdetail()}>Submit</Button>
+    <Button className="btn-secondary" onClick={()=>adduserdetail()}>Submit</Button>
   </Form>
+
+
+  
 </div>
 
   </div>;

@@ -2,7 +2,6 @@
 import './App.css';
 import './index.css';
 import Navigation1 from './Components/Navigation1';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AllUser from './Components/AllUser';
 import AddUser from './Components/AddUser';
@@ -12,6 +11,8 @@ import {BrowserRouter ,Routes,Route} from 'react-router-dom';
 
 function App() {
   return (
+    <div className='page-container'>
+    <div className='content-wrap'>
     <BrowserRouter>
       <Navigation1 />
       <Routes>
@@ -19,10 +20,11 @@ function App() {
         {/* <Route path="/all" element={<AllUser />} /> */}
         <Route  path="/add" element={<AddUser />} />
         <Route  path="/edit/:id" element={<Edituser />} />
-        
       </Routes>
-      <Footer />
     </BrowserRouter>
+    </div>
+    <Footer />
+    </div>
   );
 }
 

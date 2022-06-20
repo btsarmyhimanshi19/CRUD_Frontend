@@ -3,7 +3,7 @@ import {Form ,Label ,FormGroup ,Input ,Button} from 'reactstrap';
 import { editUser, getUser } from "../Service/api";
 import { useNavigate,useParams  } from "react-router-dom";
 import { useEffect } from "react";
-
+import { Link } from "react-router-dom";
 const defaultValue ={
   Username :'',
   email:'',
@@ -66,7 +66,10 @@ const loadUserDetails = async()=>{
     <Input id="exampleText" name="Address" type="textarea"  onChange={(e)=> onvaluechange(e)}  placeholder="Enter your Address...."/>
   </FormGroup>
    */}
+    <div>
     <Button onClick={()=>editserdetail()}>EDIT</Button>
+    <Link to={`/`}><Button color="success"  className="float-right" >BACK</Button></Link>
+    </div>
   </Form>
 </div>
 
